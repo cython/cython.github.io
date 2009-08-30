@@ -1,0 +1,185 @@
+@import url('reset.css');
+
+html {
+font-size:100.1%
+}
+
+body {
+font:100%/1.4 Arial, Helvetica, sans-serif;
+margin-bottom:10px
+}
+
+#head {
+background:url(images/headlogo.png) 10px 10px;
+background-repeat:no-repeat;
+border-bottom:1px solid #CCC;
+height:84px;
+margin-bottom:10px
+}
+
+#head a {
+display:block;
+height:84px
+}
+
+#head span {
+display:none
+}
+
+#sidebar {
+display:inline;
+float:left;
+margin-left:10px;
+width:155px
+}
+
+#nav {
+width:155px
+}
+
+#nav a:link,#nav a:visited,#current {
+border-left:5px solid #4382b4;
+color:#000;
+display:block;
+padding:5px;
+width:135px
+}
+
+#nav a:hover,#current {
+background:#ffe05f url(images/rounded.gif) top right;
+background-repeat:no-repeat
+}
+
+#nav #currents {
+border-color:#646464
+}
+
+#main {
+margin-left:165px;
+max-width:600px
+}
+
+#main a:link,#main a:visited {
+color:#036
+}
+
+#main h1,h2 {
+margin-top:20px;
+margin-bottom:20px;
+font-weight:400
+}
+
+#main h1 {
+font-size:2em;
+line-height:1
+}
+
+#main h2 {
+font-size:1.5em
+}
+
+#main h3 {
+font-size:1em;
+font-weight:700
+}
+
+strong {
+font-weight:700
+}
+
+em {
+font-style:italic
+}
+
+#nav li,#main h1 {
+margin-bottom:5px
+}
+
+#main p,#main h2 {
+padding-top:5px
+}
+
+#developers {
+margin-left:2px
+}
+
+#developers h2 {
+border:1px solid #CCC;
+border-bottom:1px solid #FFF;
+display:inline;
+padding:5px
+}
+
+#developers ul {
+border:solid #CCC;
+border-width:1px 1px 0;
+margin-top:1px
+}
+
+#developers li {
+border-bottom:1px solid #CCC;
+min-height:135px;
+padding:5px
+}
+
+#developers img {
+border:1px solid #CCC;
+float:left;
+padding:5px
+}
+
+#developers li div {
+margin-left:117px;
+padding:0 5px 5px
+}
+
+.contact {
+font-size:.9em
+}
+
+.subnav {
+list-style:square;
+margin:5px 0 10px;
+padding-left:20px
+}
+
+dl {
+margin-left:-2px
+}
+
+dl p {
+padding:0 0 5px
+}
+
+dt {
+font-style:italic;
+margin:15px 40px 5px
+}
+
+dt:before {
+border:1px solid #4382b4;
+content:"Q";
+font-family:Georgia, "Times New Roman", Times, serif;
+font-size:1.5em;
+margin-left:-36px;
+margin-right:7px;
+padding:2px 6px 5px;
+position:relative;
+top:10px
+}
+
+dd {
+margin:15px 40px 5px;
+}
+
+dd:before {
+border:1px solid #ffe05f;
+content:"A";
+font-family:Georgia, "Times New Roman", Times, serif;
+font-size:1.5em;
+margin-left:-36px;
+margin-right:7px;
+padding:2px 7px;
+position:relative;
+top:10px
+}

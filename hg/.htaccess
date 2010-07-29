@@ -1,0 +1,10 @@
+Redirect permanent /cython/hg/cython-unstable http://hg.cython.org/cython-devel
+Redirect permanent /cython/hg/cython-closures http://hg.cython.org/cython-devel
+Options +ExecCGI
+AuthUserFile /home/cython/cython_users.passwd
+AuthGroupFile /dev/null
+AuthName "cython-devel"
+AuthType Basic
+<LimitExcept GET>
+Require valid-user
+</LimitExcept>

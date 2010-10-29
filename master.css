@@ -59,7 +59,7 @@ margin-left:165px;
 max-width:600px
 }
 
-#main a:link,#main a:visited {
+a:link, a:visited {
 color:#036
 }
 
@@ -155,6 +155,7 @@ position: relative;
 top: 0px;
 right: 0px;
 border: solid darkred 2pt;
+border: solid 2pt #036;
 width: 20%;
 text-align: justify;
 }

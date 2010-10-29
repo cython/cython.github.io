@@ -19,8 +19,115 @@
         <li><a href="#development">Useful Links</a></li>
       </ul>
     </div>
-    <div id="main">
     
+<div class="testimonials" id="testimonials">
+<p style="font-weight: bold; font-size:120%">What users have to say about Cython:</p>
+<div>
+<p>
+&raquo;You would expect a whole lot of organizations and people to fancy a
+language that's about as high-level as Python, yet almost as fast and
+down-to-the-metal as C.
+</p>
+<p>
+Add to that the ability to seamlessly integrate with both
+your existing C/++ codebase and your Python codebase, easily mix very
+high level abstractions with very low-level machine access... clear
+winner.&laquo; &rarr;
+<a href="http://thread.gmane.org/gmane.comp.python.general/676420">Dun Peal</a> on c.l.py
+</p>
+</div>
+<div>
+<p>
+&raquo;Basically, Cython is about 7x times faster than Boost.Python, which
+astonished me.&laquo; &rarr;
+<a href="http://blog.chrischou.org/2010/02/28/simple-benchmark-between-cython-and-boost-python/">Chris
+Chou</a>
+<p>
+</div>
+<div>
+<p>
+&raquo;I'm honestly never going back to writing C again. Cython gives
+me all the expressiveness of Python combined with all the performance
+and close-to-the-metal-godlike-powers of C. I've been using it to
+implement high-performance graph traversal and routing algorithms and
+to interface with C/C++ libraries, and it's been an absolute amazing
+productivity boost.&laquo; &rarr;
+<a href="http://news.ycombinator.com/item?id=1212790">Andrew Tipton</a>
+</p>
+</div>
+<div>
+<p>
+&raquo;Using Cython allows you to just put effort into speeding up the
+parts of code you need to work on, and to do so without having to
+change very much. This is vastly different from ditching all the code
+and reimplementing it another language.&laquo; &rarr;
+<a href="http://www.panda3d.org/blog/?p=173">Craig Macomber</a>
+</p>
+</div>
+<div>
+<p>
+&raquo;If you have a piece of Python that you need to run fast, then I
+would recommend you used Cython immediately. This means that I can
+exploit the beauty of Python and the speed of C together, and that’s a
+match made in heaven.&laquo; &rarr;
+<a href="http://www.korokithakis.net/node/109">Stavros</a>
+</p>
+</div>
+<div>
+<p>&raquo;I wrote a script that compute a distance matrix (O^2) in
+Python with Numpy arrays and the same script in Cython. It took me 10
+minutes to figure it out how Cython works and I gained a speed up of
+550 times !!! Amazing&laquo; &rarr;
+<a href="http://dpinte.wordpress.com/2010/04/22/interfacing-gsl-with-python-using-cython-comparison-with-weave/#comment-32">kfrancoi</a>
+</p>
+</div>
+<p id="showTestimonialsSwitch" style="text-align: right; display: none">
+<a href="javascript:allTestimonials();">more ...</a><a href="javascript:hideTestimonials();">less ...</a>
+<script type="text/javascript" language="JavaScript"><!--
+function hideTestimonials() {
+  var topdiv = document.getElementById("testimonials");
+  if (topdiv) {
+    var divs = topdiv.getElementsByTagName("div");
+    var div = divs[ Math.floor(Math.random() * divs.length) ];
+    if (div) {
+      for (var i=0; i<divs.length; i++) {
+        divs[i].style.display="none";
+      }
+      div.style.display="block";
+    }
+  }
+  var plink = document.getElementById("showTestimonialsSwitch");
+  if(plink) {
+    var links = plink.getElementsByTagName("a");
+    links[1].style.display="none";
+    links[0].style.display="block";
+    plink.style.display="block";
+  }
+}
+function allTestimonials() {
+  var topdiv = document.getElementById("testimonials");
+  if (topdiv) {
+    var divs = topdiv.getElementsByTagName("div");
+    for (var i=0; i<divs.length; i++) {
+      divs[i].style.display="block";
+    }
+  }
+  var plink = document.getElementById("showTestimonialsSwitch");
+  if(plink) {
+    var links = plink.getElementsByTagName("a");
+    links[0].style.display="none";
+    links[1].style.display="block";
+    plink.style.display="block";
+  }
+}
+hideTestimonials();
+// -->
+</script>
+</p>
+</div>
+
+    <div id="main">
+
 <h1>About Cython</h1>
 <a name="about"></a>
 <p>
@@ -55,10 +162,10 @@ Here is a <strong>list</strong> of possible <a href="http://wiki.cython.org/enha
 <p>
 
 <ul>
-<li> <a href="http://docs.cython.org">Cython Users Guide</a>
+<li><a href="http://docs.cython.org">Cython Users Guide</a>
 (also available as a <a href="docs/cython-docs/build/latex/cython.pdf">pdf</a>)
-<li> The <a href="http://wiki.cython.org">Cython Wiki</a>. 
-<li> <a href="http://www.cosc.canterbury.ac.nz/greg.ewing/python/Pyrex/version/Doc/FAQ.html">Pyrex FAQ</a>
+<li>The <a href="http://wiki.cython.org">Cython Wiki</a>. 
+<li><a href="http://www.cosc.canterbury.ac.nz/greg.ewing/python/Pyrex/version/Doc/FAQ.html">Pyrex FAQ</a>
 and <a href="http://wiki.cython.org/FAQ">Cython FAQ</a>
 
 
@@ -69,9 +176,10 @@ and <a href="http://wiki.cython.org/FAQ">Cython FAQ</a>
 
 <p>
 If you still have questions, feel free to send an email to the
-<a href="http://groups.google.com/group/cython-users">cython users</a> or
+<a href="http://groups.google.com/group/cython-users">cython users</a> mailing list.
+Aspects of the core development are discussed on the
 <a href="http://codespeak.net/mailman/listinfo/cython-dev">cython development</a>
-mailing lists.
+mailing list.
 
 <h1>People</h1>
 <p>

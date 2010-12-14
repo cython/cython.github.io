@@ -33,7 +33,7 @@ Add to that the ability to seamlessly integrate with both
 your existing C/++ codebase and your Python codebase, easily mix very
 high level abstractions with very low-level machine access... clear
 winner.&laquo; &rarr;
-<a href="http://thread.gmane.org/gmane.comp.python.general/676420">Dun Peal</a> on c.l.py
+<a href="http://article.gmane.org/gmane.comp.python.general/677238">Dun Peal</a> on c.l.py
 </p>
 </div>
 <div>
@@ -71,6 +71,21 @@ would recommend you used Cython immediately. This means that I can
 exploit the beauty of Python and the speed of C together, and that’s a
 match made in heaven.&laquo; &rarr;
 <a href="http://www.korokithakis.net/node/109">Stavros</a>
+</p>
+</div>
+<div>
+<p>
+&raquo;Writing a full-on CPython module from scratch would probably
+offer better performance than Cython if you know the quirks and are
+disciplined. But to someone who doesn't already drip CPython C
+modules, Cython is a godsend.
+</p>
+<p>Ultimately, there's 5 commonly used ways (CPython [C-API],
+Boost::Python, SWIG, Cython, ctypes) to integrate C into Python, and
+right now you'd be crazy not to give Cython a shot, if that's your
+need. It's very easy to learn for anyone familiar with both C and
+Python.&laquo; &rarr;
+<a href="http://news.ycombinator.com/item?id=1846002">ashika</a>
 </p>
 </div>
 <div>
@@ -163,7 +178,7 @@ Here is a <strong>list</strong> of possible <a href="http://wiki.cython.org/enha
 
 <ul>
 <li><a href="http://docs.cython.org">Cython Users Guide</a>
-(also available as a <a href="docs/cython-docs/build/latex/cython.pdf">pdf</a>)
+<!-- (also available as a <a href="docs/cython-docs/build/latex/cython.pdf">pdf</a>) -->
 <li>The <a href="http://wiki.cython.org">Cython Wiki</a>. 
 <li><a href="http://www.cosc.canterbury.ac.nz/greg.ewing/python/Pyrex/version/Doc/FAQ.html">Pyrex FAQ</a>
 and <a href="http://wiki.cython.org/FAQ">Cython FAQ</a>
@@ -176,10 +191,11 @@ and <a href="http://wiki.cython.org/FAQ">Cython FAQ</a>
 
 <p>
 If you still have questions, feel free to send an email to the
-<a href="http://groups.google.com/group/cython-users">cython users</a> mailing list.
+<a style="font-size: 110%; font-weight: bold;" href="http://groups.google.com/group/cython-users">cython users mailing list</a>.
 Aspects of the core development are discussed on the
-<a href="http://codespeak.net/mailman/listinfo/cython-dev">cython development</a>
-mailing list.
+<a href="http://codespeak.net/mailman/listinfo/cython-dev">cython core developer</a>
+mailing list.  If you are unsure which list to use, please go to the cython users list, which has the larger audience.
+
 
 <h1>People</h1>
 <p>
@@ -219,6 +235,7 @@ Kay Hayen,
 Jim Kleckner, 
 Mark Lodato,
 David McNab,
+Vitja Makarov,
 Vasil Manolov,
 Sturla Molden,
 Chris Perkins, 
@@ -255,18 +272,17 @@ or as a <a href="release/Cython-0.13.zip">zip file</a>.
 <p>Christoph Gohlke has created Windows installers available for download on
 <a href="http://www.lfd.uci.edu/~gohlke/pythonlibs/#cython">his site</a>.
 
+
 <h1>Useful Links</h1>
 <p>
 <a name="development"></a>
 <ul>
 	<li><a href="http://wiki.cython.org/">Wiki</a></li>
 	<li><a href="http://groups.google.com/group/cython-users">General users mailing list</a> and <a href="http://blog.gmane.org/gmane.comp.python.cython.user">archive</a></li>
-        <li><a href="http://codespeak.net/mailman/listinfo/cython-dev">Core developer mailing list</a> 
-and <a href="http://dir.gmane.org/gmane.comp.python.cython.devel">archive</a></li>
+        <li><a href="http://codespeak.net/mailman/listinfo/cython-dev">Core developer mailing list</a> and <a href="http://dir.gmane.org/gmane.comp.python.cython.devel">archive</a></li>
 	<li><a href="http://trac.cython.org/cython_trac/">Bug &amp; Feature Tracker</a></li>
 	<li><a href="http://hg.cython.org/">Source code repositories</a> (using the Mercurial DVCS)</li>
 </ul>
-
 
     </div>
 

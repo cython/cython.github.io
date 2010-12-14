@@ -1,0 +1,6 @@
+syntax: glob
+
+cython_users.passwd
+release
+hg
+docs

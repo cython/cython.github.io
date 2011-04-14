@@ -37,6 +37,18 @@ winner.&laquo; &rarr;
 </p>
 </div>
 <div>
+<p>&raquo;The biggest surprise (and of course this is Cython's selling
+point) is how simple the interfacing between high level and low level
+code becomes, and the fact that it is all very robust.</p>
+<p>It's exiciting to see that there are several active projects around
+that attempt to speed up Python.  The nice thing about Cython is that
+it doesn't give you "half the speed of C" or "maybe nearly the speed
+of C, 3 years from now" -- it gives the real deal, -O3 C, and it works
+right now.&laquo; &rarr;
+<a href="http://fredrik-j.blogspot.com/2009/05/report-from-sage-days-15.html">Fredrik Johansson</a>
+</p>
+</div>
+<div>
 <p>
 &raquo;Basically, Cython is about 7x times faster than Boost.Python, which
 astonished me.&laquo; &rarr;
@@ -168,6 +180,11 @@ compiler to generate very <strong>efficient C code</strong> from Cython code.
 This makes Cython the ideal language for <strong>wrapping</strong> external C libraries, 
 and for <strong>fast C modules</strong> that speed up the execution of Python code.
 
+<h1>News</h1>
+<ul>
+  <li style="font-weight: bold; font-size: 120%">See our <a href="http://wiki.cython.org/GSoC2011">Google Summer of Code project proposals</a>.</li>
+</ul>
+
 <!--
 <h1>News</h1>
 <p>
@@ -184,7 +201,7 @@ Here is a <strong>list</strong> of possible <a href="http://wiki.cython.org/enha
 <p>
 
 <ul>
-<li><a href="http://docs.cython.org">Cython Users Guide</a>
+<li><a href="http://docs.cython.org">Cython Documentation</a>
 <!-- (also available as a <a href="docs/cython-docs/build/latex/cython.pdf">pdf</a>) -->
 <li>The <a href="http://wiki.cython.org">Cython Wiki</a>. 
 <li><a href="http://www.cosc.canterbury.ac.nz/greg.ewing/python/Pyrex/version/Doc/FAQ.html">Pyrex FAQ</a>
@@ -222,6 +239,7 @@ Grant Baillie,
 Gustavo Barbieri,
 David Barnett,
 Chuck Blake,
+Alexey Borzenkov,
 Ondrej Certik,
 Craig Citro, 
 Timothy Clemans,
@@ -241,6 +259,7 @@ Magnus Lie Hetland,
 Kay Hayen,  
 Thomas Hunger,
 Eric Huss, 
+W. Trevor King,
 Jim Kleckner, 
 Mark Lodato,
 David McNab,
@@ -273,9 +292,9 @@ and in 2010 Haoyu Bai was funded to work on <a href="http://haoyugsoc.wordpress.
 <a name="download"></a>
 Cython is freely available under the <strong>open source</strong> <a href="http://www.apache.org/licenses/LICENSE-2.0.html">Apache License</a>.
 
-<p>The <strong>latest release</strong> of Cython is 0.14 (released 2010-12-14). 
-You can download it as a <a href="release/Cython-0.14.tar.gz">gzipped tar</a> 
-or as a <a href="release/Cython-0.14.zip">zip file</a>. 
+<p>The <strong>latest release</strong> of Cython is 0.14.1 (released 2011-02-04). 
+You can download it as a <a href="release/Cython-0.14.1.tar.gz">gzipped tar</a> 
+or as a <a href="release/Cython-0.14.1.zip">zip file</a>. 
 
 <p>Cython is also available from the <a href="http://pypi.python.org/pypi/Cython/">PyPi</a> <strong>package repository</strong>. 
 
@@ -289,7 +308,7 @@ or as a <a href="release/Cython-0.14.zip">zip file</a>.
 <ul>
 	<li><a href="http://wiki.cython.org/">Wiki</a></li>
 	<li><a href="http://groups.google.com/group/cython-users">General users mailing list</a> and <a href="http://blog.gmane.org/gmane.comp.python.cython.user">archive</a></li>
-        <li><a href="http://codespeak.net/mailman/listinfo/cython-dev">Core developer mailing list</a> and <a href="http://dir.gmane.org/gmane.comp.python.cython.devel">archive</a></li>
+        <li><a href="http://mail.python.org/mailman/listinfo/cython-devel">Core developer mailing list</a> and <a href="http://dir.gmane.org/gmane.comp.python.cython.devel">archive</a></li>
 	<li><a href="http://trac.cython.org/cython_trac/">Bug &amp; Feature Tracker</a></li>
 	<li><a href="https://github.com/cython">Source code repositories</a> (using the Git DVCS)</li>
 </ul>

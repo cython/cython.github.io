@@ -14,8 +14,8 @@
       <ul id="nav">
         <li><a href="#about">About Cython</a></li>
         <li><a href="#documentation">Documentation</a></li>
-        <li><a href="#community">People</a></li>
         <li><a href="#download">Download</a></li>
+        <li><a href="#community">People</a></li>
         <li><a href="#development">Useful Links</a></li>
       </ul>
     </div>
@@ -115,6 +115,45 @@ minutes to figure it out how Cython works and I gained a speed up of
 <a href="http://dpinte.wordpress.com/2010/04/22/interfacing-gsl-with-python-using-cython-comparison-with-weave/#comment-32">kfrancoi</a>
 </p>
 </div>
+<div>
+<p>&raquo;I would like to report on a successful Cython project.
+Successful in the sense that it was much faster than all code written
+by my predecessors mainly because the speed scales almost linearly
+with the number of cores.  Also, the code is shorter and much easier
+to read and maintain. [...]</p>
+<p>Making it this fast &amp; short &amp; readable &amp; maintainable
+would have been pretty hard without Cython.&laquo; &rarr;
+<a href="http://permalink.gmane.org/gmane.comp.python.cython.user/4004">Alex van Houten</a>
+</p>
+</div>
+<div>
+<p>&raquo;At work, we’ve started using Cython with excellent success.
+We rewrote one particular Perl script as Cython and achieved a 600%
+speed improvement.  As a Perl lover, this was impressive.  We still
+get all the benefits of Python such as rapid development and clean
+object-oriented design patterns but with the speed of C.&laquo; &rarr;
+<a href="http://wim.kerkhofftech.ca/2010/11/cython-c-extensions-for-python/">Wim Kerkhoff</a>
+</p>
+</div>
+<div>
+<p>&raquo;The reason that I was interested in Cython was the long
+calculation times I encountered while doing a multi-variable
+optimization with a function evaluation that involved solving a
+differential equation with scipy.integrate.odeint.  By simply
+replacing the class that contained the differential equation with a
+Cython version the calculation time dropped by a factor 5.  Not bad
+for half a Sunday afternoons work.&laquo; &rarr;
+<a href="http://korbinin.blogspot.com/2011/07/using-cython.html">Korbinin</a>
+</p>
+</div>
+<div>
+<p>&raquo;I was surprised how simple it was to get it working both
+under Windows and Linux.  I did not have to mess with make files or
+configure the compiles.  Cython integrated well with NumPy and SciPy.
+This expands the programming tasks you can do with Python
+substantially.&laquo; &rarr;
+<a href="http://blog.samibadawi.com/2010/10/natural-language-processing-in-clojure.html">Sami Badawi</a>
+</div>
 <p id="showTestimonialsSwitch" style="text-align: right; display: none">
 <a href="javascript:allTestimonials();">more ...</a><a href="javascript:hideTestimonials();">less ...</a>
 <script type="text/javascript" language="JavaScript"><!--
@@ -122,12 +161,14 @@ function hideTestimonials() {
   var topdiv = document.getElementById("testimonials");
   if (topdiv) {
     var divs = topdiv.getElementsByTagName("div");
-    var div = divs[ Math.floor(Math.random() * divs.length) ];
-    if (div) {
+    var div1 = divs[ Math.floor(Math.random() * divs.length) ];
+    var div2 = divs[ Math.floor(Math.random() * divs.length) ];
+    if (div1 || div2) {
       for (var i=0; i<divs.length; i++) {
         divs[i].style.display="none";
       }
-      div.style.display="block";
+      if (div1) div1.style.display="block";
+      if (div2) div2.style.display="block";
     }
   }
   var plink = document.getElementById("showTestimonialsSwitch");
@@ -226,9 +267,9 @@ mailing list.  If you are unsure which list to use, the cython users list is pro
 <a name="download"></a>
 Cython is freely available under the <strong>open source</strong> <a href="http://www.apache.org/licenses/LICENSE-2.0.html">Apache License</a>.
 
-<p>The <strong>latest release</strong> of Cython is 0.14.1 (released 2011-02-04). 
-You can download it as a <a href="release/Cython-0.14.1.tar.gz">gzipped tar</a> 
-or as a <a href="release/Cython-0.14.1.zip">zip file</a>. 
+<p>The <strong>latest release</strong> of Cython is 0.15 (released 2011-08-05). 
+You can download it as a <a href="release/Cython-0.15.tar.gz">gzipped tar</a> 
+or as a <a href="release/Cython-0.15.zip">zip file</a>. 
 
 <p>Cython is also available from the <a href="http://pypi.python.org/pypi/Cython/">PyPi</a> <strong>package repository</strong>. 
 
@@ -248,6 +289,7 @@ and <a href="http://folk.uio.no/dagss/">Dag Sverre Seljebotn</a>.
 Greg Ewing, 
 Martin Albrecht,
 Peter Alexander,
+Francesc Alted,
 Arfrever Frehtes Taifersar Arahesis,
 Haoyu Bai,
 Grant Baillie,
@@ -255,6 +297,7 @@ Gustavo Barbieri,
 David Barnett,
 Chuck Blake,
 Alexey Borzenkov,
+Lars Buitinck,
 Ondrej Certik,
 Craig Citro, 
 Timothy Clemans,
@@ -263,6 +306,7 @@ Dave Cournapeau,
 Lisandro Dalc&iacute;n,
 Julien Danjou,
 Nicolas Dumazet,
+John Ehresman,
 Eric Firing,
 Mark Florisson, 
 Danilo Freitas, 
@@ -270,7 +314,10 @@ Gary Furnish,
 Gabriel Gellner,
 Christoph Gohlke,
 Brian Granger, 
+Jason Grout,
+Chris Lasher,
 Magnus Lie Hetland,
+Bj&ouml;rn Linse,
 Kay Hayen,  
 Thomas Hunger,
 Eric Huss, 
@@ -281,18 +328,21 @@ David McNab,
 Vitja Makarov,
 Vasil Manolov,
 Sturla Molden,
+Brent Pedersen,
 Chris Perkins, 
 Andrey Plotnikov,
 Paul Prescod,
 Prabhu Ramachandran,
 Holger Rapp,
-Kirill Smelkov,
 Corbin Simpson, 
+Kirill Smelkov,
 Kurt Smith,
-<a href="http://wstein.org">William Stein</a>,
+Nathaniel Smith,
+William Stein,
 Andrew Straw,
 Peter Todd, 
 Erik Tollerud, 
+Pauli Virtanen,
 Carl Witty,
 Felix Wu.
 

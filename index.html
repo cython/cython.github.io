@@ -20,6 +20,215 @@
       </ul>
     </div>
     
+    <div id="main">
+
+<h1>About Cython</h1>
+<a name="about"></a>
+<p>
+<strong>Cython</strong> is a language that makes writing C extensions for the 
+Python language as easy as <strong>Python</strong> itself.
+It is based on the well-known <strong>Pyrex</strong>, but supports more 
+cutting edge functionality and optimizations.
+</p>
+
+<p>
+<strong>Cython gives you the combined power of Python and C to let you</strong>
+<ul>
+<li>write Python code that <a href="http://docs.cython.org/src/tutorial/external.html">calls
+  back and forth</a> from and to C or C++ code natively at any point.</li>
+<li>easily tune readable Python code into plain C performance by
+  <a href="http://docs.cython.org/src/quickstart/cythonize.html">adding static type declarations</a>.</li>
+<li>use <a href="http://docs.cython.org/src/userguide/debugging.html">combined source code level debugging</a>
+  to find bugs in your Python, Cython and C code.</li>
+<li><a href="http://docs.cython.org/src/tutorial/numpy.html">interact efficiently</a> with large data sets,
+  e.g. using multi-dimensional <a href="http://numpy.scipy.org/">NumPy</a> arrays.</li>
+<li>quickly build your applications within the large, mature and widely used
+  <a href="http://www.python.org/about/">CPython ecosystem</a>.</li>
+<li>integrate natively with existing code and data in legacy, low-level or
+  high-performance libraries and applications.</li>
+</ul>
+</p>
+
+<p>
+The Cython language is a superset of the <strong>Python</strong> language that
+additionally supports calling <strong>C functions</strong> and declaring 
+<strong>C types</strong> on variables and class attributes.  This allows the 
+compiler to generate very <strong>efficient C code</strong> from Cython code.
+The C code is <strong>generated once</strong> and then compiles with all major
+C/C++ compilers in <a href="http://python.org">CPython</a> 2.4 and later,
+including Python 3.x.
+<a href="http://pypy.org/">PyPy</a> support is work in progress and is considered
+<a href="https://sage.math.washington.edu:8091/hudson/job/cython-docs/doclinks/1/src/tutorial/pypy.html">mostly usable</a>
+in <a href="https://github.com/cython/cython/">recent developer versions</a>.
+</p>
+
+<p>
+This makes Cython the ideal language for <strong>wrapping</strong> external C libraries,
+<strong>embedding</strong> CPython into existing applications, and for
+<strong>fast C modules</strong> that speed up the execution of Python code.
+</p>
+
+<!--
+<h1>News</h1>
+<ul>
+  <li style="font-weight: bold; font-size: 120%">See our <a href="http://wiki.cython.org/GSoC2011">Google Summer of Code project proposals</a>.</li>
+</ul>
+
+<h1>News</h1>
+<p>
+We welcome Cython-related <strong>student applications</strong> for the <a href="http://code.google.com/soc/2009/">Google Summer of Code</a>. We are planning on going through the
+<a href="http://wiki.python.org/moin/SummerOfCode/2009">Python Foundation</a> as a mentoring organization. 
+Here is a <strong>list</strong> of possible <a href="http://wiki.cython.org/enhancements/">enhancements</a> and 
+<a href="http://wiki.cython.org/codeprojects">project ideas</a>.
+-->
+
+
+<h1>Documentation</h1>
+<p>
+<a name="documentation"></a>
+<ul>
+<li><a href="http://docs.cython.org">Cython Documentation</a>
+<!-- (also available as a <a href="docs/cython-docs/build/latex/cython.pdf">pdf</a>) -->
+<li>The <a href="http://wiki.cython.org">Cython Wiki</a>. 
+<li><a href="http://www.cosc.canterbury.ac.nz/greg.ewing/python/Pyrex/version/Doc/FAQ.html">Pyrex FAQ</a>
+and <a href="http://wiki.cython.org/FAQ">Cython FAQ</a>
+
+<li style="padding-top: 1em">SciPy 2009 proceedings (pdf):
+<a href="http://conference.scipy.org/proceedings/SciPy2009/paper_1/">Cython Tutorial</a>; 
+<a href="http://conference.scipy.org/proceedings/SciPy2009/paper_2/">Fast Numerical Computations with Cython</a>
+</ul>
+</p>
+
+<p>
+If you still have questions, feel free to send an email to the
+<a href="http://groups.google.com/group/cython-users">cython users mailing list</a>.
+Aspects of the core development are discussed on the
+<a href="http://mail.python.org/mailman/listinfo/cython-devel">cython core developer</a>
+mailing list.  If you are unsure which list to use, the cython users list is probably the right one to use, which has the larger audience. 
+</p>
+
+<h1>Download</h1>
+<p>
+<a name="download"></a>
+Cython is freely available under the <strong>open source</strong> <a href="http://www.apache.org/licenses/LICENSE-2.0.html">Apache License</a>.
+</p>
+
+<p>The <strong>latest release</strong> of Cython is 0.16 (released 2012-04-21). 
+You can download it as a <a href="release/Cython-0.16.tar.gz">gzipped tar</a> 
+or as a <a href="release/Cython-0.16.zip">zip file</a>. 
+</p>
+
+<p>Cython is also available from the <a href="http://pypi.python.org/pypi/Cython/">PyPI</a> <strong>package index repository</strong>. 
+</p>
+
+<p>Christoph Gohlke has created Windows installers available for download on
+<a href="http://www.lfd.uci.edu/~gohlke/pythonlibs/#cython">his site</a>.
+</p>
+
+
+<h1>People</h1>
+<p>
+<a name="community"></a>
+<p><strong>Core Developers</strong>:
+<a href="http://consulting.behnel.de/">Stefan Behnel</a>,
+<a href="http://bradshawfamily.net/">Robert Bradshaw</a>,
+Lisandro Dalc&iacute;n,
+Mark Florisson,
+Vitja Makarov,
+<a href="http://folk.uio.no/dagss/">Dag Sverre Seljebotn</a>.
+</p>
+
+<p><strong>Contributors</strong>:
+Martin Albrecht,
+Peter Alexander,
+Francesc Alted,
+Arfrever Frehtes Taifersar Arahesis,
+Haoyu Bai,
+Grant Baillie,
+Gustavo Barbieri,
+David Barnett,
+Chuck Blake,
+Alexey Borzenkov,
+Lars Buitinck,
+Ondrej Certik,
+Craig Citro, 
+Timothy Clemans,
+Bryan Cole,
+Dave Cournapeau,
+Armon Dadgar,
+Julien Danjou,
+Nicolas Dumazet,
+John Ehresman,
+Eric Firing,
+Danilo Freitas, 
+Gary Furnish, 
+Gabriel Gellner,
+Christoph Gohlke,
+Brian Granger, 
+Jason Grout,
+Romain Guillebert,
+Chris Lasher,
+Magnus Lie Hetland,
+Bj&ouml;rn Linse,
+Kay Hayen,  
+Thomas Hunger,
+Eric Huss, 
+W. Trevor King,
+Jim Kleckner, 
+Mark Lodato,
+Angus McMorland,
+David McNab,
+Vasil Manolov,
+Sturla Molden,
+Brent Pedersen,
+Chris Perkins, 
+Andrey Plotnikov,
+Paul Prescod,
+Prabhu Ramachandran,
+Holger Rapp,
+Ralf Schmitt,
+Corbin Simpson, 
+Kirill Smelkov,
+Kurt Smith,
+Nathaniel Smith,
+William Stein,
+Andrew Straw,
+Arfrever Taifersar Arahesis,
+Peter Todd, 
+Erik Tollerud, 
+Pauli Virtanen,
+Carl Witty,
+Felix Wu,
+Yury Zaytsev.
+</p>
+
+<p><strong>Financial Contributions</strong>:
+<a href="http://www.google.com">Google</a> and <a href="http://www.enthought.com/">Enthought</a> funded Dag Seljebotn to greatly improve 
+<a href="http://wiki.cython.org/tutorials/numpy">Cython integration with NumPy</a>.
+Kurt Smith and Danilo Freitas were funded through the <a href="http://code.google.com/soc/">Google Summer of Code</a> program to work on improved Fortran and C++ support respectively,
+and in 2010 Haoyu Bai was funded to work on <a href="http://haoyugsoc.wordpress.com/">Python 3 compatibility</a>. 
+</p>
+
+<p><strong>Special Thanks</strong>
+to Greg Ewing for inventing and developing Cython's predecessor
+<a href="http://www.cosc.canterbury.ac.nz/greg.ewing/python/Pyrex/">Pyrex</a>
+and for his valuable input in language design decisions.
+</p>
+
+<h1>Useful Links</h1>
+<p>
+<a name="development"></a>
+<ul>
+	<li><a href="http://wiki.cython.org/">Wiki</a></li>
+	<li><a href="http://groups.google.com/group/cython-users">General users mailing list</a> and <a href="http://blog.gmane.org/gmane.comp.python.cython.user">archive</a></li>
+        <li><a href="http://mail.python.org/mailman/listinfo/cython-devel">Core developer mailing list</a> and <a href="http://dir.gmane.org/gmane.comp.python.cython.devel">archive</a></li>
+	<li><a href="http://trac.cython.org/cython_trac/">Bug &amp; Feature Tracker</a></li>
+	<li><a href="https://github.com/cython">Source code repositories</a> (using the Git DVCS)</li>
+</ul>
+</p>
+
+    </div>
+
 <div class="testimonials" id="testimonials">
 <p style="font-weight: bold; font-size:120%">What users have to say about Cython:</p>
 <div>
@@ -71,8 +280,11 @@ productivity boost.&laquo; &rarr;
 <p>
 &raquo;Using Cython allows you to just put effort into speeding up the
 parts of code you need to work on, and to do so without having to
-change very much. This is vastly different from ditching all the code
-and reimplementing it another language.&laquo; &rarr;
+change very much.  This is vastly different from ditching all the code
+and reimplementing it another language.  It also requires you to learn
+a pretty minimal amount of stuff.  You also get to keep the niceness of
+the Python syntax which may Python coders have come to
+appreciate.&laquo; &rarr;
 <a href="http://www.panda3d.org/blog/?p=173">Craig Macomber</a>
 </p>
 </div>
@@ -163,7 +375,7 @@ or external libraries that they need to interface, and most of the
 reason Python has had such a great adoption curve in that space is
 because Numpy has made the data portion of that interface easy.
 Cython makes the code portion quite painless, as well.&laquo; &rarr;
-<a href="http://blog.streamitive.com/2011/10/17/numpy-isnt-about-fast-arrays/">streamative.com</a>
+<a href="http://blog.streamitive.com/2011/10/17/numpy-isnt-about-fast-arrays/">Peter Z. Wang</a>
 </p>
 </div>
 <div>
@@ -177,7 +389,7 @@ work.&laquo; &rarr;
 <p>&raquo;... the binding needed to be rewritten, mainly because the
 current binding is directly written in C++ and is a maintenance
 nightmare.  This new binding is written in Cython&laquo; &rarr;
-<a href="https://github.com/bastienleonard/pysfml2-cython/blob/b8a660fb721aad781bafd6574d18b1a9c6539adc/doc/sphinx/source/introduction.rst">Bastien Léonard</a>
+<a href="https://github.com/bastienleonard/pysfml2-cython/blob/b8a660fb721aad781bafd6574d18b1a9c6539adc/doc/sphinx/source/introduction.rst#doesnt-sfml-already-have-a-python-binding">Bastien Léonard</a>
 </p>
 </div>
 <p id="showTestimonialsSwitch" style="text-align: right; display: none">
@@ -187,14 +399,12 @@ function hideTestimonials() {
   var topdiv = document.getElementById("testimonials");
   if (topdiv) {
     var divs = topdiv.getElementsByTagName("div");
-    var div1 = divs[ Math.floor(Math.random() * divs.length) ];
-    var div2 = divs[ Math.floor(Math.random() * divs.length) ];
-    if (div1 || div2) {
-      for (var i=0; i<divs.length; i++) {
+    var div = divs[ 1 + Math.floor(Math.random() * (divs.length-1)) ];
+    if (div) {
+      for (var i=1; i<divs.length; i++) {
         divs[i].style.display="none";
       }
-      if (div1) div1.style.display="block";
-      if (div2) div2.style.display="block";
+      div.style.display="block";
     }
   }
   var plink = document.getElementById("showTestimonialsSwitch");
@@ -226,181 +436,6 @@ hideTestimonials();
 </script>
 </p>
 </div>
-
-    <div id="main">
-
-<h1>About Cython</h1>
-<a name="about"></a>
-<p>
-<strong>Cython</strong> is a language that makes writing C extensions for the 
-Python language as easy as <strong>Python</strong> itself.
-Cython is based on the well-known <strong>Pyrex</strong>, but supports more 
-cutting edge functionality and optimizations.
-
-<p>
-The Cython language is very close to the <strong>Python</strong> language, but 
-Cython additionally supports calling <strong>C functions</strong> and declaring 
-<strong>C types</strong> on variables and class attributes. This allows the 
-compiler to generate very <strong>efficient C code</strong> from Cython code.
-The generated C code compiles with Python 2.4 and later (including Python 3).
-
-<p>
-This makes Cython the ideal language for <strong>wrapping</strong> external C libraries, 
-and for <strong>fast C modules</strong> that speed up the execution of Python code.
-
-<!--
-<h1>News</h1>
-<ul>
-  <li style="font-weight: bold; font-size: 120%">See our <a href="http://wiki.cython.org/GSoC2011">Google Summer of Code project proposals</a>.</li>
-</ul>
-
-<h1>News</h1>
-<p>
-We welcome Cython-related <strong>student applications</strong> for the <a href="http://code.google.com/soc/2009/">Google Summer of Code</a>. We are planning on going through the
-<a href="http://wiki.python.org/moin/SummerOfCode/2009">Python Foundation</a> as a mentoring organization. 
-Here is a <strong>list</strong> of possible <a href="http://wiki.cython.org/enhancements/">enhancements</a> and 
-<a href="http://wiki.cython.org/codeprojects">project ideas</a>.
--->
-
-
-<h1>Documentation</h1>
-<p>
-<a name="documentation"></a>
-<p>
-
-<ul>
-<li><a href="http://docs.cython.org">Cython Documentation</a>
-<!-- (also available as a <a href="docs/cython-docs/build/latex/cython.pdf">pdf</a>) -->
-<li>The <a href="http://wiki.cython.org">Cython Wiki</a>. 
-<li><a href="http://www.cosc.canterbury.ac.nz/greg.ewing/python/Pyrex/version/Doc/FAQ.html">Pyrex FAQ</a>
-and <a href="http://wiki.cython.org/FAQ">Cython FAQ</a>
-
-
-<li>SciPy 2009 proceedings (pdf):
-<a href="http://conference.scipy.org/proceedings/SciPy2009/paper_1/">Cython Tutorial</a>; 
-<a href="http://conference.scipy.org/proceedings/SciPy2009/paper_2/">Fast Numerical Computations with Cython</a>
-</ul>
-
-<p>
-If you still have questions, feel free to send an email to the
-<a href="http://groups.google.com/group/cython-users">cython users mailing list</a>.
-Aspects of the core development are discussed on the
-<a href="http://mail.python.org/mailman/listinfo/cython-devel">cython core developer</a>
-mailing list.  If you are unsure which list to use, the cython users list is probably the right one to use, which has the larger audience. 
-
-
-<h1>Download</h1>
-<p>
-<a name="download"></a>
-Cython is freely available under the <strong>open source</strong> <a href="http://www.apache.org/licenses/LICENSE-2.0.html">Apache License</a>.
-
-<p>The <strong>latest release</strong> of Cython is 0.15.1 (released 2011-09-19). 
-You can download it as a <a href="release/Cython-0.15.1.tar.gz">gzipped tar</a> 
-or as a <a href="release/Cython-0.15.1.zip">zip file</a>. 
-
-<p>Cython is also available from the <a href="http://pypi.python.org/pypi/Cython/">PyPi</a> <strong>package repository</strong>. 
-
-<p>Christoph Gohlke has created Windows installers available for download on
-<a href="http://www.lfd.uci.edu/~gohlke/pythonlibs/#cython">his site</a>.
-
-
-<h1>People</h1>
-<p>
-<a name="community"></a>
-<p><strong>Core Developers</strong>:
-<a href="http://consulting.behnel.de/">Stefan Behnel</a>,
-<a href="http://http://bradshawfamily.net/">Robert Bradshaw</a>,
-Lisandro Dalc&iacute;n,
-Mark Florisson,
-Vitja Makarov,
-<a href="http://folk.uio.no/dagss/">Dag Sverre Seljebotn</a>.
-
-<p><strong>Contributors</strong>:
-Martin Albrecht,
-Peter Alexander,
-Francesc Alted,
-Arfrever Frehtes Taifersar Arahesis,
-Haoyu Bai,
-Grant Baillie,
-Gustavo Barbieri,
-David Barnett,
-Chuck Blake,
-Alexey Borzenkov,
-Lars Buitinck,
-Ondrej Certik,
-Craig Citro, 
-Timothy Clemans,
-Bryan Cole,
-Dave Cournapeau,
-Armon Dadgar,
-Julien Danjou,
-Nicolas Dumazet,
-John Ehresman,
-Eric Firing,
-Danilo Freitas, 
-Gary Furnish, 
-Gabriel Gellner,
-Christoph Gohlke,
-Brian Granger, 
-Jason Grout,
-Romain Guillebert,
-Chris Lasher,
-Magnus Lie Hetland,
-Bj&ouml;rn Linse,
-Kay Hayen,  
-Thomas Hunger,
-Eric Huss, 
-W. Trevor King,
-Jim Kleckner, 
-Mark Lodato,
-Angus McMorland,
-David McNab,
-Vasil Manolov,
-Sturla Molden,
-Brent Pedersen,
-Chris Perkins, 
-Andrey Plotnikov,
-Paul Prescod,
-Prabhu Ramachandran,
-Holger Rapp,
-Ralf Schmitt,
-Corbin Simpson, 
-Kirill Smelkov,
-Kurt Smith,
-Nathaniel Smith,
-William Stein,
-Andrew Straw,
-Arfrever Taifersar Arahesis,
-Peter Todd, 
-Erik Tollerud, 
-Pauli Virtanen,
-Carl Witty,
-Felix Wu,
-Yury Zaytsev.
-
-<p><strong>Financial Contributions</strong>:
-<a href="http://www.google.com">Google</a> and <a href="http://www.enthought.com/">Enthought</a> funded Dag Seljebotn to greatly improve 
-<a href="http://wiki.cython.org/tutorials/numpy">Cython integration with NumPy</a>.
-Kurt Smith and Danilo Freitas were funded through the <a href="http://code.google.com/soc/">Google Summer of Code</a> program to work on improved Fortran and C++ support respectively,
-and in 2010 Haoyu Bai was funded to work on <a href="http://haoyugsoc.wordpress.com/">Python 3 compatibility</a>. 
-
-<p><strong>Special Thanks</strong>
-to Greg Ewing for inventing and developing Cython's predecessor
-<a href="http://www.cosc.canterbury.ac.nz/greg.ewing/python/Pyrex/">Pyrex</a>
-and for his valuable input in language design decisions.
-
-<h1>Useful Links</h1>
-<p>
-<a name="development"></a>
-<ul>
-	<li><a href="http://wiki.cython.org/">Wiki</a></li>
-	<li><a href="http://groups.google.com/group/cython-users">General users mailing list</a> and <a href="http://blog.gmane.org/gmane.comp.python.cython.user">archive</a></li>
-        <li><a href="http://mail.python.org/mailman/listinfo/cython-devel">Core developer mailing list</a> and <a href="http://dir.gmane.org/gmane.comp.python.cython.devel">archive</a></li>
-	<li><a href="http://trac.cython.org/cython_trac/">Bug &amp; Feature Tracker</a></li>
-	<li><a href="https://github.com/cython">Source code repositories</a> (using the Git DVCS)</li>
-</ul>
-
-    </div>
 
 <script type="text/javascript">
 var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");

@@ -44,7 +44,7 @@ cutting edge functionality and optimizations.
   e.g. using multi-dimensional <a href="http://numpy.scipy.org/">NumPy</a> arrays.</li>
 <li>quickly build your applications within the large, mature and widely used
   <a href="http://www.python.org/about/">CPython ecosystem</a>.</li>
-<li>integrate natively with existing code and data in legacy, low-level or
+<li>integrate natively with existing code and data from legacy, low-level or
   high-performance libraries and applications.</li>
 </ul>
 </p>
@@ -59,7 +59,7 @@ C/C++ compilers in <a href="http://python.org">CPython</a> 2.4 and later,
 including Python 3.x.
 <a href="http://pypy.org/">PyPy</a> support is work in progress (on both sides)
 and is considered <a href="http://docs.cython.org/src/userguide/pypy.html">mostly usable</a>
-in Cython 0.17.
+in Cython 0.17.x.
 </p>
 
 <p>
@@ -113,9 +113,9 @@ mailing list.  If you are unsure which list to use, the cython users list is pro
 Cython is freely available under the <strong>open source</strong> <a href="http://www.apache.org/licenses/LICENSE-2.0.html">Apache License</a>.
 </p>
 
-<p>The <strong>latest release</strong> of Cython is 0.17 (released 2012-09-01). 
-You can download it as a <a href="release/Cython-0.17.tar.gz">gzipped tar</a> 
-or as a <a href="release/Cython-0.17.zip">zip file</a>. 
+<p>The <strong>latest release</strong> of Cython is 0.17.4 (released 2013-01-03). 
+You can download it as a <a href="release/Cython-0.17.4.tar.gz" onClick="javascript:pageTracker._trackEvent('source', 'download', 'Cython-0.17.4.tar.gz');">gzipped tar</a> 
+or as a <a href="release/Cython-0.17.4.zip" onClick="javascript:pageTracker._trackEvent('source', 'download', 'Cython-0.17.4.zip');">zip file</a>. 
 </p>
 
 <p>Cython is also available from the <a href="http://pypi.python.org/pypi/Cython/">PyPI</a> <strong>package index repository</strong>. 
@@ -139,6 +139,7 @@ Vitja Makarov,
 </p>
 
 <p><strong>Contributors</strong>:
+Marc Abramowitz,
 Martin Albrecht,
 Peter Alexander,
 Francesc Alted,
@@ -149,43 +150,65 @@ Gustavo Barbieri,
 David Barnett,
 Chuck Blake,
 Alexey Borzenkov,
+Georg Brandl,
+Matthew Brett,
 Lars Buitinck,
+Vladimir Cerny,
 Ondrej Certik,
+Eric Chlebek,
 Craig Citro, 
 Timothy Clemans,
 Bryan Cole,
 Dave Cournapeau,
+Andreas van Cranenburgh,
 Armon Dadgar,
 Julien Danjou,
 Nicolas Dumazet,
 John Ehresman,
+Jason Evans,
 Eric Firing,
 Danilo Freitas, 
+Bradley Froehle,
 Gary Furnish, 
 Gabriel Gellner,
 Christoph Gohlke,
 Brian Granger, 
+Christoph Groth,
 Jason Grout,
 Romain Guillebert,
 Chris Lasher,
+Yaroslav Halchenko,
 Magnus Lie Hetland,
+David Hirschfeld,
 Bj&ouml;rn Linse,
-Kay Hayen,  
+Thomas Lotze,
+Kay Hayen,
 Thomas Hunger,
-Eric Huss, 
+Eric Huss,
+Naoki Inada,
+Rafe Kettler,
+Jerome Kieffer,
 W. Trevor King,
-Jim Kleckner, 
+Jim Kleckner,
 Mark Lodato,
 Angus McMorland,
 David McNab,
+Yesudeep Mangalapilly,
 Vasil Manolov,
 Sturla Molden,
+Mansour Moufid,
+Olivier Parcollet,
 Brent Pedersen,
-Chris Perkins, 
+Mark Peek,
+Chris Perkins,
+Gabriel Pettier,
 Andrey Plotnikov,
 Paul Prescod,
 Prabhu Ramachandran,
+Jeff Ramnani,
 Holger Rapp,
+Peinthor Rene,
+Joon Ro,
 Ralf Schmitt,
 Corbin Simpson, 
 Kirill Smelkov,
@@ -194,9 +217,13 @@ Nathaniel Smith,
 William Stein,
 Andrew Straw,
 Arfrever Taifersar Arahesis,
-Peter Todd, 
-Erik Tollerud, 
+Dimitri Tcaciuc,
+Gregor Thalhammer,
+Peter Todd,
+Erik Tollerud,
+Mathieu Virbel,
 Pauli Virtanen,
+Jakub Wilk,
 Carl Witty,
 Felix Wu,
 Yury Zaytsev.
@@ -243,6 +270,15 @@ your existing C/++ codebase and your Python codebase, easily mix very
 high level abstractions with very low-level machine access... clear
 winner.&laquo; &rarr;
 <a href="http://article.gmane.org/gmane.comp.python.general/677238">Dun Peal</a> on c.l.py
+</p>
+</div>
+<div>
+<p>&raquo;A general rule of thumb is that your program spends 80% of
+its time running 20% of the code.  Thus a good strategy for efficient
+coding is to write everything, profile your code, and optimize the
+parts that need it.  Python’s profilers are great, and Cython allows
+you to do the latter step with minimal effort.&laquo; &rarr;
+<a href="http://www.stat.washington.edu/~hoytak/blog/bestlibraries.html">Hoyt Koepke</a>
 </p>
 </div>
 <div>
@@ -320,6 +356,17 @@ Python.&laquo; &rarr;
 </p>
 </div>
 <div>
+<p>&raquo;What I loved about the Cython code is that I use a Python
+list to manage the Vortex objects. This shows that we can use the
+normal Python containers to manage objects. This is extremely
+convenient. [...]</p>
+<p>Clearly, if you are building code from scratch and need speed,
+Cython is an excellent option. For this I really must congratulate the
+Cython and Pyrex developers.&laquo; &rarr;
+<a href="http://prabhuramachandran.blogspot.de/2008/09/python-vs-cython-vs-d-pyd-vs-c-swig.html">Prabhu Ramachandran</a>
+</p>
+</div>
+<div>
 <p>&raquo;I wrote a script that compute a distance matrix (O^2) in
 Python with Numpy arrays and the same script in Cython. It took me 10
 minutes to figure it out how Cython works and I gained a speed up of
@@ -384,6 +431,7 @@ Just doing that, with no Cython specific code reduced the time of
 processing 10K records from 2.9sec to 1.7sec. Not bad for that little
 work.&laquo; &rarr;
 <a href="http://pythonwise.blogspot.com/2012/01/fastavro-with-cython.html">Miki Tebeka</a>
+</p>
 </div>
 <div>
 <p>&raquo;... the binding needed to be rewritten, mainly because the

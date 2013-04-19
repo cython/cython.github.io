@@ -40,7 +40,7 @@ cutting edge functionality and optimizations.
   <a href="http://docs.cython.org/src/quickstart/cythonize.html">adding static type declarations</a>.</li>
 <li>use <a href="http://docs.cython.org/src/userguide/debugging.html">combined source code level debugging</a>
   to find bugs in your Python, Cython and C code.</li>
-<li><a href="http://docs.cython.org/src/tutorial/numpy.html">interact efficiently</a> with large data sets,
+<li><a href="http://docs.cython.org/src/userguide/memoryviews.html">interact efficiently</a> with large data sets,
   e.g. using multi-dimensional <a href="http://numpy.scipy.org/">NumPy</a> arrays.</li>
 <li>quickly build your applications within the large, mature and widely used
   <a href="http://www.python.org/about/">CPython ecosystem</a>.</li>
@@ -56,16 +56,19 @@ additionally supports calling <strong>C functions</strong> and declaring
 compiler to generate very <strong>efficient C code</strong> from Cython code.
 The C code is <strong>generated once</strong> and then compiles with all major
 C/C++ compilers in <a href="http://python.org">CPython</a> 2.4 and later,
-including Python 3.x.
+including Python 3.x.  We regularly run integration tests against all supported
+CPython versions and their latest in-development branches to make sure that the
+generated code stays widely compatible and well adapted to each version.
 <a href="http://pypy.org/">PyPy</a> support is work in progress (on both sides)
 and is considered <a href="http://docs.cython.org/src/userguide/pypy.html">mostly usable</a>
-in Cython 0.17.x.
+since Cython 0.17.  The latest PyPy version is always recommended here.
 </p>
 
 <p>
-This makes Cython the ideal language for <strong>wrapping</strong> external C libraries,
-<strong>embedding</strong> CPython into existing applications, and for
-<strong>fast C modules</strong> that speed up the execution of Python code.
+All of this makes Cython the ideal language for <strong>wrapping</strong>
+external C libraries, <strong>embedding</strong> CPython into existing
+applications, and for <strong>fast C modules</strong> that speed up the
+execution of Python code.
 </p>
 
 <!--
@@ -90,8 +93,7 @@ Here is a <strong>list</strong> of possible <a href="http://wiki.cython.org/enha
 <li><a href="http://docs.cython.org">Cython Documentation</a>
 <!-- (also available as a <a href="docs/cython-docs/build/latex/cython.pdf">pdf</a>) -->
 <li>The <a href="http://wiki.cython.org">Cython Wiki</a>. 
-<li><a href="http://www.cosc.canterbury.ac.nz/greg.ewing/python/Pyrex/version/Doc/FAQ.html">Pyrex FAQ</a>
-and <a href="http://wiki.cython.org/FAQ">Cython FAQ</a>
+<li>The <a href="http://wiki.cython.org/FAQ">Cython FAQ</a> (and the older <a href="http://www.cosc.canterbury.ac.nz/greg.ewing/python/Pyrex/version/Doc/FAQ.html">Pyrex FAQ</a>)
 
 <li style="padding-top: 1em">SciPy 2009 proceedings (pdf):
 <a href="http://conference.scipy.org/proceedings/SciPy2009/paper_1/">Cython Tutorial</a>; 
@@ -113,12 +115,12 @@ mailing list.  If you are unsure which list to use, the cython users list is pro
 Cython is freely available under the <strong>open source</strong> <a href="http://www.apache.org/licenses/LICENSE-2.0.html">Apache License</a>.
 </p>
 
-<p>The <strong>latest release</strong> of Cython is 0.17.4 (released 2013-01-03). 
-You can download it as a <a href="release/Cython-0.17.4.tar.gz" onClick="javascript:pageTracker._trackEvent('source', 'download', 'Cython-0.17.4.tar.gz');">gzipped tar</a> 
-or as a <a href="release/Cython-0.17.4.zip" onClick="javascript:pageTracker._trackEvent('source', 'download', 'Cython-0.17.4.zip');">zip file</a>. 
+<p>The <strong>latest release</strong> of Cython is 0.19 (released 2013-04-19).
+You can download it as a <a href="release/Cython-0.19.tar.gz" onClick="javascript:pageTracker._trackEvent('source', 'download', 'Cython-0.19.tar.gz');">gzipped tar</a>
+or as a <a href="release/Cython-0.19.zip" onClick="javascript:pageTracker._trackEvent('source', 'download', 'Cython-0.19.zip');">zip file</a>.
 </p>
 
-<p>Cython is also available from the <a href="http://pypi.python.org/pypi/Cython/">PyPI</a> <strong>package index repository</strong>. 
+<p>Cython is also available from the <a href="http://pypi.python.org/pypi/Cython/">PyPI</a> <strong>package index repository</strong>.
 </p>
 
 <p>Christoph Gohlke has created Windows installers available for download on
@@ -197,6 +199,7 @@ Yesudeep Mangalapilly,
 Vasil Manolov,
 Sturla Molden,
 Mansour Moufid,
+Nikita Nemkin,
 Olivier Parcollet,
 Brent Pedersen,
 Mark Peek,

@@ -462,13 +462,20 @@ nightmare.  This new binding is written in Cython&laquo; &rarr;
 function hideTestimonials() {
   var topdiv = document.getElementById("testimonials");
   if (topdiv) {
+    var top_hits = 4;
+
     var divs = topdiv.getElementsByTagName("div");
-    var div = divs[ 1 + Math.floor(Math.random() * (divs.length-1)) ];
+    var div = divs[ Math.round(Math.random() * (top_hits-1)) ];
     if (div) {
-      for (var i=1; i<divs.length; i++) {
+      for (var i=0; i<divs.length; i++) {
         divs[i].style.display="none";
       }
       div.style.display="block";
+
+      div = divs[ top_hits + Math.round(Math.random() * (divs.length-top_hits-1)) ];
+      if (div) {
+        div.style.display="block";
+      }
     }
   }
   var plink = document.getElementById("showTestimonialsSwitch");

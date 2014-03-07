@@ -265,13 +265,10 @@ and for his valuable input in language design decisions.
 <div class="testimonials" id="testimonials">
 <p style="font-weight: bold; font-size:120%">What users have to say about Cython:</p>
 <div>
-<p>
-&raquo;You would expect a whole lot of organizations and people to fancy a
+<p>&raquo;You would expect a whole lot of organizations and people to fancy a
 language that's about as high-level as Python, yet almost as fast and
-down-to-the-metal as C.
-</p>
-<p>
-Add to that the ability to seamlessly integrate with both
+down-to-the-metal as C.</p>
+<p>Add to that the ability to seamlessly integrate with both
 your existing C/++ codebase and your Python codebase, easily mix very
 high level abstractions with very low-level machine access... clear
 winner.&laquo; &rarr;
@@ -279,12 +276,13 @@ winner.&laquo; &rarr;
 </p>
 </div>
 <div>
-<p>&raquo;A general rule of thumb is that your program spends 80% of
-its time running 20% of the code.  Thus a good strategy for efficient
-coding is to write everything, profile your code, and optimize the
-parts that need it.  Python’s profilers are great, and Cython allows
-you to do the latter step with minimal effort.&laquo; &rarr;
-<a href="http://www.stat.washington.edu/~hoytak/blog/bestlibraries.html">Hoyt Koepke</a>
+<p>&raquo;You guys rock!
+In scikit-learn, we have decided early on to do Cython, rather than C or
+C++. That decision has been a clear win because the code is way more
+maintainable. We have had to convince new contributors that Cython was
+better for them, but the readability of the code, and the capacity to
+support multiple Python versions, was worth it.&laquo; &rarr;
+<a href="http://thread.gmane.org/gmane.comp.python.cython.user/10764/focus=10787">Gaël Varoquaux</a>
 </p>
 </div>
 <div>
@@ -297,6 +295,26 @@ it doesn't give you "half the speed of C" or "maybe nearly the speed
 of C, 3 years from now" -- it gives the real deal, -O3 C, and it works
 right now.&laquo; &rarr;
 <a href="http://fredrik-j.blogspot.com/2009/05/report-from-sage-days-15.html">Fredrik Johansson</a>
+</p>
+</div>
+<div>
+<p>
+&raquo;I'm honestly never going back to writing C again. Cython gives
+me all the expressiveness of Python combined with all the performance
+and close-to-the-metal-godlike-powers of C. I've been using it to
+implement high-performance graph traversal and routing algorithms and
+to interface with C/C++ libraries, and it's been an absolute amazing
+productivity boost.&laquo; &rarr;
+<a href="http://news.ycombinator.com/item?id=1212790">Andrew Tipton</a>
+</p>
+</div>
+<div>
+<p>&raquo;A general rule of thumb is that your program spends 80% of
+its time running 20% of the code.  Thus a good strategy for efficient
+coding is to write everything, profile your code, and optimize the
+parts that need it.  Python’s profilers are great, and Cython allows
+you to do the latter step with minimal effort.&laquo; &rarr;
+<a href="http://www.stat.washington.edu/~hoytak/blog/bestlibraries.html">Hoyt Koepke</a>
 </p>
 </div>
 <div>
@@ -316,17 +334,6 @@ astonished me.&laquo; &rarr;
 <a href="http://blog.chrischou.org/2010/02/28/simple-benchmark-between-cython-and-boost-python/">Chris
 Chou</a>
 <p>
-</div>
-<div>
-<p>
-&raquo;I'm honestly never going back to writing C again. Cython gives
-me all the expressiveness of Python combined with all the performance
-and close-to-the-metal-godlike-powers of C. I've been using it to
-implement high-performance graph traversal and routing algorithms and
-to interface with C/C++ libraries, and it's been an absolute amazing
-productivity boost.&laquo; &rarr;
-<a href="http://news.ycombinator.com/item?id=1212790">Andrew Tipton</a>
-</p>
 </div>
 <div>
 <p>

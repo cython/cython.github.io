@@ -472,14 +472,15 @@ function hideTestimonials() {
     var top_hits = 4;
 
     var divs = topdiv.getElementsByTagName("div");
-    var div = divs[ Math.round(Math.random() * (top_hits-1)) ];
+    var div = divs[ Math.floor(Math.random() * top_hits) % top_hits ];
     if (div) {
       for (var i=0; i<divs.length; i++) {
         divs[i].style.display="none";
       }
       div.style.display="block";
 
-      div = divs[ top_hits + Math.round(Math.random() * (divs.length-top_hits-1)) ];
+      var rest = divs.length - top_hits;
+      div = divs[ top_hits + Math.floor(Math.random() * rest) % rest ];
       if (div) {
         div.style.display="block";
       }

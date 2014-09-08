@@ -115,9 +115,9 @@ mailing list.  If you are unsure which list to use, the cython users list is pro
 Cython is freely available under the <strong>open source</strong> <a href="http://www.apache.org/licenses/LICENSE-2.0.html">Apache License</a>.
 </p>
 
-<p>The <strong>latest release</strong> of Cython is 0.20.1 (released 2014-02-11).
-You can download it as a <a href="release/Cython-0.20.1.tar.gz" onClick="javascript:pageTracker._trackEvent('source', 'download', 'Cython-0.20.1.tar.gz');">gzipped tar</a>
-or as a <a href="release/Cython-0.20.1.zip" onClick="javascript:pageTracker._trackEvent('source', 'download', 'Cython-0.20.1.zip');">zip file</a>.
+<p>The <strong>latest release</strong> of Cython is 0.20.2 (released 2014-06-16).
+You can download it as a <a href="release/Cython-0.20.2.tar.gz" onClick="javascript:pageTracker._trackEvent('source', 'download', 'Cython-0.20.2.tar.gz');">gzipped tar</a>
+or as a <a href="release/Cython-0.20.2.zip" onClick="javascript:pageTracker._trackEvent('source', 'download', 'Cython-0.20.2.zip');">zip file</a>.
 </p>
 
 <p>Cython is also available from the <a href="http://pypi.python.org/pypi/Cython/">PyPI</a> <strong>package index repository</strong>.
@@ -473,6 +473,25 @@ nightmare.  This new binding is written in Cython&laquo; &rarr;
 <a href="http://pysfml2-cython.readthedocs.org/en/latest/introduction.html#doesn-t-sfml-already-have-a-python-binding">Bastien Léonard</a>
 </p>
 </div>
+<div>
+<p>
+&raquo;
+Code generation via Cython allows the production of smaller and more maintainable bindings, including increased compatibility with all supported Python releases without additional burden for NEST developers.
+&laquo;
+</p>
+This approach resulted in a reduction of the code footprint of around 50% and a significant increase in the cohesiveness of the code related to the Python bindings: whereas previously seven core files and 22 additional files were involved, the new approach requires merely two core files. The new implementation also removes the compile-time dependency on NumPy and provides numerous additional maintainability benefits by reducing complexity and increasing comprehensibility of the code. The re-write of the build system also resulted in a 50% reduction of code, and resolved multiple issues with its usability and robustness.
+&laquo;
+</p>
+<p>
+&raquo;
+In conclusion, we hope that through a more widespread use of Cython, neuroscientific software developers will be able to focus their creative energy on refining their algorithms and implementing new features, instead of working to pay off the interest on the accumulating technical debt.
+&laquo; &rarr;
+<a href="http://journal.frontiersin.org/Journal/10.3389/fninf.2014.00023/full">Yury V. Zaytsev and Abigail Morrison</a>
+</p>
+<p>
+</p>
+</div>
+
 <p id="showTestimonialsSwitch" style="text-align: right; display: none">
 <a href="javascript:allTestimonials();">more ...</a><a href="javascript:hideTestimonials();">less ...</a>
 <script type="text/javascript" language="JavaScript"><!--

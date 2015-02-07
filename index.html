@@ -55,10 +55,11 @@ additionally supports calling <strong>C functions</strong> and declaring
 <strong>C types</strong> on variables and class attributes.  This allows the 
 compiler to generate very <strong>efficient C code</strong> from Cython code.
 The C code is <strong>generated once</strong> and then compiles with all major
-C/C++ compilers in <a href="http://python.org">CPython</a> 2.4 and later,
-including Python 3.x.  We regularly run integration tests against all supported
-CPython versions and their latest in-development branches to make sure that the
-generated code stays widely compatible and well adapted to each version.
+C/C++ compilers in <a href="http://python.org">CPython</a> 2.6, 2.7 (2.4+
+with Cython 0.20.x) as well as 3.2 and all later versions.
+We regularly run integration tests against all supported CPython versions and
+their latest in-development branches to make sure that the generated code stays
+widely compatible and well adapted to each version.
 <a href="http://pypy.org/">PyPy</a> support is work in progress (on both sides)
 and is considered <a href="http://docs.cython.org/src/userguide/pypy.html">mostly usable</a>
 since Cython 0.17.  The latest PyPy version is always recommended here.
@@ -115,9 +116,9 @@ mailing list.  If you are unsure which list to use, the cython users list is pro
 Cython is freely available under the <strong>open source</strong> <a href="http://www.apache.org/licenses/LICENSE-2.0.html">Apache License</a>.
 </p>
 
-<p>The <strong>latest release</strong> of Cython is 0.20.2 (released 2014-06-16).
-You can download it as a <a href="release/Cython-0.20.2.tar.gz" onClick="javascript:pageTracker._trackEvent('source', 'download', 'Cython-0.20.2.tar.gz');">gzipped tar</a>
-or as a <a href="release/Cython-0.20.2.zip" onClick="javascript:pageTracker._trackEvent('source', 'download', 'Cython-0.20.2.zip');">zip file</a>.
+<p>The <strong>latest release</strong> of Cython is 0.21.2 (released 2014-12-27).
+You can download it as a <a href="release/Cython-0.21.2.tar.gz" onClick="javascript:pageTracker._trackEvent('source', 'download', 'Cython-0.21.2.tar.gz');">gzipped tar</a>
+or as a <a href="release/Cython-0.21.2.zip" onClick="javascript:pageTracker._trackEvent('source', 'download', 'Cython-0.21.2.zip');">zip file</a>.
 </p>
 
 <p>Cython is also available from the <a href="http://pypi.python.org/pypi/Cython/">PyPI</a> <strong>package index repository</strong>.
@@ -488,7 +489,13 @@ In conclusion, we hope that through a more widespread use of Cython, neuroscient
 &laquo; &rarr;
 <a href="http://journal.frontiersin.org/Journal/10.3389/fninf.2014.00023/full">Yury V. Zaytsev and Abigail Morrison</a>
 </p>
+</div>
+<div>
 <p>
+&raquo;
+The Cython version took about 30 minutes to write, and it runs just as fast as the C code — because, why wouldn’t it? It *is* C code, really, with just some syntactic sugar. And you don’t even have to learn or think about a foreign, complicated C API…You just, write C. Or C++ — although that’s a little more awkward. Both the Cython version and the C version are about 70x faster than the pure Python version, which uses Numpy arrays.
+&laquo; &rarr;
+<a href="http://honnibal.wordpress.com/2014/10/21/writing-c-in-cython/">Matthew Honnibal</a>
 </p>
 </div>
 

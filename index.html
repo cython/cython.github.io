@@ -19,7 +19,7 @@
         <li><a href="#development">Useful Links</a></li>
       </ul>
     </div>
-    
+
     <div id="main">
 
 <h1>About Cython</h1>
@@ -51,8 +51,8 @@ It makes writing C extensions for Python as easy as Python itself.
 
 <p>
 The Cython language is a superset of the <strong>Python</strong> language that
-additionally supports calling <strong>C functions</strong> and declaring 
-<strong>C types</strong> on variables and class attributes.  This allows the 
+additionally supports calling <strong>C functions</strong> and declaring
+<strong>C types</strong> on variables and class attributes.  This allows the
 compiler to generate very <strong>efficient C code</strong> from Cython code.
 The C code is <strong>generated once</strong> and then compiles with all major
 C/C++ compilers in <a href="http://python.org">CPython</a> 2.6, 2.7 (2.4+
@@ -81,8 +81,8 @@ execution of Python code.
 <h1>News</h1>
 <p>
 We welcome Cython-related <strong>student applications</strong> for the <a href="http://code.google.com/soc/2009/">Google Summer of Code</a>. We are planning on going through the
-<a href="http://wiki.python.org/moin/SummerOfCode/2009">Python Foundation</a> as a mentoring organization. 
-Here is a <strong>list</strong> of possible <a href="http://wiki.cython.org/enhancements/">enhancements</a> and 
+<a href="http://wiki.python.org/moin/SummerOfCode/2009">Python Foundation</a> as a mentoring organization.
+Here is a <strong>list</strong> of possible <a href="http://wiki.cython.org/enhancements/">enhancements</a> and
 <a href="http://wiki.cython.org/codeprojects">project ideas</a>.
 -->
 
@@ -103,7 +103,7 @@ Here is a <strong>list</strong> of possible <a href="http://wiki.cython.org/enha
 <li><a href="https://shop.oreilly.com/product/0636920033431.do">Cython - A Guide for Python Programmers</a>, book by Kurt W. Smith, O'Reilly 2015</li>
 <li><a href="http://doi.ieeecomputersociety.org/10.1109/MCSE.2010.118">Cython: The best of both worlds</a>, article by Stefan Behnel, Robert Bradshaw et al., IEEE 2011</li>
 <li>SciPy 2009 proceedings (pdf):
-  <a href="http://conference.scipy.org/proceedings/SciPy2009/paper_1/">Cython Tutorial</a>; 
+  <a href="http://conference.scipy.org/proceedings/SciPy2009/paper_1/">Cython Tutorial</a>;
   <a href="http://conference.scipy.org/proceedings/SciPy2009/paper_2/">Fast Numerical Computations with Cython</a>
 </li>
 </ul>
@@ -114,7 +114,7 @@ If you still have questions, feel free to send an email to the
 <a href="https://groups.google.com/group/cython-users">cython users mailing list</a>.
 Aspects of the core development are discussed on the
 <a href="https://mail.python.org/mailman/listinfo/cython-devel">cython core developer</a>
-mailing list.  If you are unsure which list to use, the cython users list is probably the right one to use, which has the larger audience. 
+mailing list.  If you are unsure which list to use, the cython users list is probably the right one to use, which has the larger audience.
 </p>
 
 <h1>Download</h1>
@@ -123,12 +123,14 @@ mailing list.  If you are unsure which list to use, the cython users list is pro
 Cython is freely available under the <strong>open source</strong> <a href="http://www.apache.org/licenses/LICENSE-2.0.html">Apache License</a>.
 </p>
 
-<p>The <strong>latest release</strong> of Cython is 0.22 (released 2015-02-11).
+<p>The <strong>latest release</strong> of Cython is 0.24 (released 2016-04-04).
+<!--
 You can download it as a <a href="release/Cython-0.22.tar.gz" onClick="javascript:pageTracker._trackEvent('source', 'download', 'Cython-0.22.tar.gz');">gzipped tar</a>
 or as a <a href="release/Cython-0.22.zip" onClick="javascript:pageTracker._trackEvent('source', 'download', 'Cython-0.22.zip');">zip file</a>.
 </p>
 
-<p>Cython is also available from the <a href="http://pypi.python.org/pypi/Cython/">PyPI</a> <strong>package index repository</strong>.
+<p>
+-->Cython is available from the <a href="http://pypi.python.org/pypi/Cython/">PyPI</a> <strong>package index repository</strong>.
 </p>
 
 <p>Christoph Gohlke has created Windows installers available for download on
@@ -169,7 +171,7 @@ Lars Buitinck,
 Vladimir Cerny,
 Ondrej Certik,
 Eric Chlebek,
-Craig Citro, 
+Craig Citro,
 Timothy Clemans,
 Bryan Cole,
 Favian Contreras,
@@ -181,13 +183,13 @@ Nicolas Dumazet,
 John Ehresman,
 Jason Evans,
 Eric Firing,
-Danilo Freitas, 
+Danilo Freitas,
 Bradley Froehle,
-Gary Furnish, 
+Gary Furnish,
 Mart&iacute;n Gait&aacute;n,
 Gabriel Gellner,
 Christoph Gohlke,
-Brian Granger, 
+Brian Granger,
 Christoph Groth,
 Jason Grout,
 Romain Guillebert,
@@ -228,7 +230,7 @@ Holger Rapp,
 Peinthor Rene,
 Joon Ro,
 Ralf Schmitt,
-Corbin Simpson, 
+Corbin Simpson,
 Kirill Smelkov,
 Kurt Smith,
 Nathaniel Smith,
@@ -248,10 +250,10 @@ Yury Zaytsev.
 </p>
 
 <p><strong>Financial Contributions</strong>:
-<a href="http://www.google.com">Google</a> and <a href="http://www.enthought.com/">Enthought</a> funded Dag Seljebotn to greatly improve 
+<a href="http://www.google.com">Google</a> and <a href="http://www.enthought.com/">Enthought</a> funded Dag Seljebotn to greatly improve
 <a href="http://docs.cython.org/src/tutorial/numpy.html">Cython integration with NumPy</a>.
 Kurt Smith and Danilo Freitas were funded through the <a href="http://code.google.com/soc/">Google Summer of Code</a> program to work on improved Fortran and C++ support respectively,
-and in 2010 Haoyu Bai was funded to work on <a href="http://haoyugsoc.wordpress.com/">Python 3 compatibility</a>. 
+and in 2010 Haoyu Bai was funded to work on <a href="http://haoyugsoc.wordpress.com/">Python 3 compatibility</a>.
 </p>
 
 <p><strong>Special Thanks</strong>

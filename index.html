@@ -91,7 +91,7 @@ Here is a <strong>list</strong> of possible <a href="http://wiki.cython.org/enha
 <p>
 <a name="documentation"></a>
 <ul>
-<li><a href="http://docs.cython.org">Cython Documentation</a> (<a href="https://sage.math.washington.edu:8091/hudson/job/cython-docs/doclinks/1/">dev version</a>)</li>
+<li><a href="http://docs.cython.org">Cython Documentation</a> (<a href="https://cython.org:8091/hudson/job/cython-docs/doclinks/1/">dev version</a>)</li>
 <!-- (also available as a <a href="docs/cython-docs/build/latex/cython.pdf">pdf</a>) --></li>
 <li>The <a href="https://github.com/cython/cython/wiki">Cython Wiki</a>.</li>
 <li>The <a href="https://github.com/cython/cython/wiki/FAQ">Cython FAQ</a> (and the older <a href="http://www.cosc.canterbury.ac.nz/greg.ewing/python/Pyrex/version/Doc/FAQ.html">Pyrex FAQ</a>)</li>
@@ -124,13 +124,7 @@ Cython is freely available under the <strong>open source</strong> <a href="http:
 </p>
 
 <p>The <strong>latest release</strong> of Cython is 0.24 (released 2016-04-04).
-<!--
-You can download it as a <a href="release/Cython-0.22.tar.gz" onClick="javascript:pageTracker._trackEvent('source', 'download', 'Cython-0.22.tar.gz');">gzipped tar</a>
-or as a <a href="release/Cython-0.22.zip" onClick="javascript:pageTracker._trackEvent('source', 'download', 'Cython-0.22.zip');">zip file</a>.
-</p>
-
-<p>
--->Cython is available from the <a href="http://pypi.python.org/pypi/Cython/">PyPI</a> <strong>package index repository</strong>.
+Cython is available from the <a href="http://pypi.python.org/pypi/Cython/">PyPI</a> <strong>package index repository</strong>.
 </p>
 
 <p>Christoph Gohlke has created Windows installers available for download on
@@ -241,6 +235,7 @@ Dimitri Tcaciuc,
 Gregor Thalhammer,
 Peter Todd,
 Erik Tollerud,
+David Vierra,
 Mathieu Virbel,
 Pauli Virtanen,
 Jakub Wilk,
@@ -526,6 +521,26 @@ I use a lot of pyrex/cython to bind to libraries - it's so much faster to code i
 Thank you for the hard work.
 &laquo; &rarr;
 <a href="https://news.ycombinator.com/item?id=7090430">jnazario</a>
+</p>
+</div>
+<div>
+<p>
+&raquo;
+I am not good with C so I mostly do pure python for my research. However, now dealing with clusters of 1000+ molecules, there was huge bottlenecks in my code.
+</p><p>
+Using cython it went from running single calculation in hours to seconds, focking nice...
+&laquo; &rarr;
+<a href="https://www.reddit.com/r/Cython/comments/3sj5p4/optimized_my_code/">fishtickler</a>
+</p>
+</div>
+<div>
+<p>
+&raquo;
+Cython saves you from a great many of the gotchas [that C has].
+The worst you'll usually get is a lack of performance gain (at which point cython -a is your friend).
+Wringing out all the performance you can get can require a reasonable working knowledge of C -- but you don't have to know it that well to do pretty darn well.
+&laquo; &rarr;
+<a href="https://www.reddit.com/r/Python/comments/4k6mbr/how_much_c_should_i_know_before_i_start_writing/d3cssee">lmcinnes</a>
 </p>
 </div>
 

@@ -206,3 +206,9 @@ padding:2px 7px;
 position:relative;
 top:10px
 }
+
+iframe {
+width:100%; 
+margin: 10px; 
+height: 100vh; 
+}
